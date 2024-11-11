@@ -1,41 +1,143 @@
 html {
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
+  background-color: black;
+  font-weight: bold;
 }
 
+button {
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  padding: 3px;
+}
+
+button:hover {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: red;
+  background-color: white;
+}
+
+.Body {
+  width: 600px;
+  justify-self: center;
+  background-color: white;
+  padding: 50px 50px 50px 50px;
+  border: none;
+  display: grid;
+  
+}
 
 h1 {
-  font-size: 60px;
+  font-family: Copperplate, Papyrus, fantasy;
+  justify-self: center;
+  font-size: 50px;
+  color: white;
+  border: solid white;
+  padding: 10px;
+  background-color: red;
+}
+
+.Main {
+  display: grid;
+  grid-template-areas:
+  "Player1 Player2"
+  "Score1 Score2"
+  "Player1Button Player2Button";
+}
+
+#Player1 {
+  font-size: 30px;
+  text-align: left;
+  background-color: transparent;
+  min-width: 1ch;
+  max-width: 10ch;
+  border: transparent;
+  font-weight: bold;
+}
+
+#Player2 {
+  font-size: 30px;
+  text-align: right;
+  justify-self: right;
+  background-color: transparent;
+  min-width: 1ch;
+  max-width: 10ch;
+  border: transparent;
+  font-weight: bold;
+}
+
+.Score1 {
+  font-size: 50px;
+  color: #ffae00;
+}
+.Score2 {
+  font-size: 50px;
+  text-align: right;
+  color: #ffae00;
+}
+
+::placeholder {
+  color: black;
+}
+
+.TextWords {
+  font-size: 200%;
   text-align: center;
 }
 
-p, li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+.TextScore {
+  font-size: 200%;
+  text-align: center;
+}
+
+.Player2Button {
+  text-align: right;
 }
 
 
-html {
-  background-color: #00539F;
+.Precursor {
+  font-size: 20px;
+  display: grid;
+  grid-template-areas:
+  "P1 Input1"
+  "P2 Input2";
 }
 
-body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+.ConfirmButton {
+  justify-self: center;
+}
+.ConfirmButton button{
+  justify-self: center;
+  font-size: 30px;
 }
 
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
+.P1 {
+  width: 250px;
+  justify-self: center;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
+.P2 {
+  width: 250px;
+  justify-self: center;
+  position: relative;
+}
+
+#Input2 {
+  position: relative;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+
+#Input1 {
+  justify-self: left;
+  font-size: 20px;
+  color: black;
+  background-color: transparent;
+  padding: 0px;
+  min-width: 1ch;
+  max-width: 11ch;
+  border: transparent;
 }
